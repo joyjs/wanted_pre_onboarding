@@ -10,7 +10,7 @@ function ModalButton() {
 
   return (
     <section className="ModalButton">
-      <h1 className="modal-button-title">Modal</h1>
+      <h1 className="title">Modal</h1>
 
       <div className="modal-button-wrapper">
         <button className="modal-button" onClick={openModal}>

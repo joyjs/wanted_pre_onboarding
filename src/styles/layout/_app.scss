@@ -9,5 +9,10 @@
     width: 100%;
     height: auto;
     margin-bottom: $component-spacing;
+
+    .title {
+      @include text-style(title, $black);
+      padding: $component-title-spacing;
+    }
   }
 }

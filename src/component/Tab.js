@@ -9,7 +9,7 @@ function Tab() {
 
   return (
     <section className="Tab">
-      <h1 className="tabs-title">Tab</h1>
+      <h1 className="title">Tab</h1>
 
       <div className="tabs-wrapper">
         <div className="tabs-header">

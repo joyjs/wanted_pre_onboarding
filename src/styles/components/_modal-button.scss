@@ -5,11 +5,6 @@
   color: $white;
   background-color: $purple;
 
-  &-title {
-    @include text-style(title, $black);
-    padding: $component-title-spacing;
-  }
-
   &-wrapper {
     @include flex;
     margin: $component-title-spacing 0;

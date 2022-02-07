@@ -1,9 +1,4 @@
 .tabs {
-  &-title {
-    @include text-style(title, $black);
-    padding: $component-title-spacing;
-  }
-
   &-wrapper {
     @include column-flex;
     margin: $component-title-spacing 0;
