@@ -3,9 +3,9 @@
   width: 100vw;
   height: 100vh;
 
-  .Toggle,
   .ModalButton,
-  .Tab {
+  .Tab,
+  .Toggle {
     @include column-flex(start, start);
     width: 100%;
     height: auto;
