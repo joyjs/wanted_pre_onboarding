@@ -1,0 +1,51 @@
+.tabs {
+  &-title {
+    @include text-style(title, $black);
+    padding: $component-title-spacing;
+  }
+
+  &-wrapper {
+    @include column-flex;
+    margin: $component-title-spacing 0;
+    width: 100vw;
+    height: auto;
+  }
+
+  &-header {
+    @include flex;
+
+    .tab {
+      @include flex(start);
+      @include text-style(base, rgba($black, 0.2));
+      padding: 18px 0 18px 18px;
+      width: 256px;
+      font-weight: 700;
+      background-color: $grey;
+      transition: all 250ms ease-in-out;
+
+      &.is-active {
+        color: rgba($white, 1);
+        background-color: $purple;
+      }
+    }
+  }
+
+  &-contents {
+    @include flex;
+    width: 100%;
+    margin: $component-title-spacing 0;
+
+    .content {
+      display: none;
+      padding: $component-title-spacing 0;
+
+      &.is-active {
+        display: block;
+      }
+
+      strong {
+        text-transform: uppercase;
+      }
+    }
+  }
+}
