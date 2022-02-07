@@ -1,0 +1,32 @@
+$flex-map: (
+  start: flex-start,
+  end: flex-end,
+  around: space-aroud,
+  between: space-between,
+  evenly: space-evenly,
+  center: center,
+  stretch: stretch,
+);
+
+@function _get-flex-map-value($key) {
+  @return map-get($flex-map, $key);
+}
+
+@mixin flex($jc: center, $ai: center) {
+  display: flex;
+  justify-content: _get-flex-map-value($jc);
+  align-items: _get-flex-map-value($ai);
+}
+
+@mixin inline-flex($jc: center, $ai: center) {
+  display: inline-flex;
+  justify-content: _get-flex-map-value($jc);
+  align-items: _get-flex-map-value($ai);
+}
+
+@mixin column-flex($jc: center, $ai: center) {
+  display: flex;
+  flex-direction: column;
+  justify-content: _get-flex-map-value($jc);
+  align-items: _get-flex-map-value($ai);
+}
