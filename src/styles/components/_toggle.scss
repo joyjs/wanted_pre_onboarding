@@ -1,0 +1,57 @@
+.toggle {
+  position: relative;
+  width: 216px;
+  height: 108px;
+  margin-bottom: 36px;
+  border-radius: 100px;
+  overflow: hidden;
+
+  &-wrapper {
+    @include column-flex;
+    margin: $component-title-spacing 0;
+    width: 100vw;
+    height: auto;
+  }
+
+  #switch {
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+
+  .slider {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    background-color: $grey;
+    transition: all 320ms ease-in-out;
+
+    &::before {
+      content: '';
+      position: absolute;
+      display: inline-block;
+      width: 81px;
+      height: 81px;
+      top: 13.5px;
+      left: 15.5px;
+      border-radius: 50px;
+      background-color: #fff;
+      transition: all 320ms ease-in-out;
+    }
+  }
+
+  &-text {
+    @include text-style(base, $black);
+  }
+
+  #switch:checked + .slider {
+    background-color: $purple;
+  }
+
+  #switch:checked + .slider::before {
+    transform: translateX(104px);
+  }
+}
