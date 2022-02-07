@@ -6,7 +6,7 @@
   background-color: $purple;
 
   &-title {
-    font-size: 36px;
+    @include text-style(title, $black);
     padding: $component-title-padding;
   }
 
