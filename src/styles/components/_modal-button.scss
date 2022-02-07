@@ -7,13 +7,12 @@
 
   &-title {
     font-size: 36px;
-    padding: 54px;
+    padding: $component-title-padding;
   }
 
   &-wrapper {
     @include flex;
     width: 100vw;
     height: 20vw;
-    margin-bottom: 54px;
   }
 }
