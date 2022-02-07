@@ -7,12 +7,12 @@
 
   &-title {
     @include text-style(title, $black);
-    padding: $component-title-padding;
+    padding: $component-title-spacing;
   }
 
   &-wrapper {
     @include flex;
-    margin: $component-title-padding 0;
+    margin: $component-title-spacing 0;
     width: 100vw;
     height: auto;
   }

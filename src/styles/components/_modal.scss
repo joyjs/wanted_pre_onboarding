@@ -9,8 +9,8 @@
 
   &-wrapper {
     @include column-flex;
-    padding: ($component-title-padding / 2) ($component-title-padding * 2)
-      $component-title-padding;
+    padding: ($component-title-spacing / 2) ($component-title-spacing * 2)
+      $component-title-spacing;
     border-radius: 10px;
     background-color: $white;
 
