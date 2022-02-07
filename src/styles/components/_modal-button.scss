@@ -12,7 +12,8 @@
 
   &-wrapper {
     @include flex;
+    margin: $component-title-padding 0;
     width: 100vw;
-    height: 20vw;
+    height: auto;
   }
 }
