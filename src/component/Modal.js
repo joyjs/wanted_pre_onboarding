@@ -18,7 +18,7 @@ function Modal({ showModal, setShowModal }) {
         >
           x
         </button>
-        <h1 className="title">Hello CodeState!</h1>
+        <h1 className="title">Hello CodeStates!</h1>
       </div>
     </aside>
   ) : null
