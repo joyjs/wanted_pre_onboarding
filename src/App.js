@@ -1,16 +1,20 @@
 import React from 'react'
 import './styles/main.scss'
+import Toggle from './component/Toggle'
 import ModalButton from './component/ModalButton'
 import Tab from './component/Tab'
 
 function App() {
   return (
     <div className="App">
-      {/* 2. Modal */}
+      {/* Modal */}
       <ModalButton />
 
-      {/* 3. Tab */}
+      {/* Tab */}
       <Tab />
+
+      {/* Toggle */}
+      <Toggle />
     </div>
   )
 }
