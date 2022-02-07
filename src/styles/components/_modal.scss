@@ -1,0 +1,27 @@
+.modal {
+  &-background {
+    @include flex;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($black, 0.2);
+  }
+
+  &-wrapper {
+    @include column-flex;
+    padding: 27px 108px 54px;
+    border-radius: 10px;
+    background-color: $white;
+
+    .close-btn {
+      font-size: 24px;
+      font-weight: 700;
+      padding: 12px;
+    }
+
+    .title {
+      color: $purple;
+      text-transform: uppercase;
+    }
+  }
+}
