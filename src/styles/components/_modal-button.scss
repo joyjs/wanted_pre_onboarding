@@ -1,0 +1,7 @@
+.modal-button {
+  @include flex;
+  padding: 13px 34px;
+  border-radius: 25px;
+  color: $white;
+  background-color: $purple;
+}
