@@ -4,4 +4,16 @@
   border-radius: 50px;
   color: $white;
   background-color: $purple;
+
+  &-title {
+    font-size: 36px;
+    padding: 54px;
+  }
+
+  &-wrapper {
+    @include flex;
+    width: 100vw;
+    height: 20vw;
+    margin-bottom: 54px;
+  }
 }

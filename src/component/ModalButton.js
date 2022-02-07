@@ -10,11 +10,13 @@ function ModalButton() {
 
   return (
     <section className="ModalButton">
-      <h1 className="visually-hidden">Modal</h1>
+      <h1 className="modal-button-title">Modal</h1>
 
-      <button className="modal-button" onClick={openModal}>
-        Open Modal
-      </button>
+      <div className="modal-button-wrapper">
+        <button className="modal-button" onClick={openModal}>
+          Open Modal
+        </button>
+      </div>
 
       <Modal showModal={showModal} setShowModal={setShowModal} />
     </section>
