@@ -1,0 +1,11 @@
+.App {
+  @include column-flex(start);
+  width: 100vw;
+  height: 100vh;
+
+  .ModalButton {
+    @include flex;
+    width: 100%;
+    height: 100%;
+  }
+}
