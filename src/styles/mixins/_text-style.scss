@@ -1,4 +1,4 @@
-@mixin title() {
+@mixin text-style-title() {
   font-family: $font-main;
   font-size: $font-size-title;
   font-weight: $font-weight-title;
@@ -6,21 +6,54 @@
   letter-spacing: $letter-spacing-title;
 }
 
-@mixin base() {
+@mixin text-style-base() {
   font-family: $font-main;
   font-size: $font-size-base;
   font-weight: $font-weight-base;
   line-height: $line-height-base;
   letter-spacing: $letter-spacing-base;
 }
+@mixin text-style-16() {
+  font-family: $font-main;
+  font-size: $font-size-16;
+  font-weight: $font-weight-16;
+  line-height: $line-height-16;
+  letter-spacing: $letter-spacing-16;
+}
+@mixin text-style-24() {
+  font-family: $font-main;
+  font-size: $font-size-24;
+  font-weight: $font-weight-24;
+  line-height: $line-height-24;
+  letter-spacing: $letter-spacing-24;
+}
+@mixin text-style-36() {
+  font-family: $font-main;
+  font-size: $font-size-36;
+  font-weight: $font-weight-36;
+  line-height: $line-height-36;
+  letter-spacing: $letter-spacing-36;
+}
 
 @mixin text-style($name, $color: false) {
   @if ($name == title) {
-    @include title;
+    @include text-style-title;
   }
 
   @if ($name == base) {
-    @include base;
+    @include text-style-base;
+  }
+
+  @if ($name == 16) {
+    @include text-style-16;
+  }
+
+  @if ($name == 24) {
+    @include text-style-24;
+  }
+
+  @if ($name == 36) {
+    @include text-style-36;
   }
 
   @if (type-of($color) == color) {
