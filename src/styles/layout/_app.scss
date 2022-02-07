@@ -4,7 +4,7 @@
   height: 100vh;
 
   .ModalButton {
-    @include flex;
+    @include column-flex(start, start);
     width: 100%;
     height: 100%;
   }
