@@ -1,0 +1,29 @@
+@mixin title() {
+  font-family: $font-main;
+  font-size: $font-size-title;
+  font-weight: $font-weight-title;
+  line-height: $line-height-title;
+  letter-spacing: $letter-spacing-title;
+}
+
+@mixin base() {
+  font-family: $font-main;
+  font-size: $font-size-base;
+  font-weight: $font-weight-base;
+  line-height: $line-height-base;
+  letter-spacing: $letter-spacing-base;
+}
+
+@mixin text-style($name, $color: false) {
+  @if ($name == title) {
+    @include title;
+  }
+
+  @if ($name == base) {
+    @include base;
+  }
+
+  @if (type-of($color) == color) {
+    color: $color;
+  }
+}
