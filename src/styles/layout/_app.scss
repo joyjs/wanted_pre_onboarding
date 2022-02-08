@@ -6,7 +6,8 @@
   .ModalButton,
   .Tab,
   .Toggle,
-  .Tag {
+  .Tag,
+  .Autocomplete {
     @include column-flex(start, start);
     width: 100%;
     height: auto;
