@@ -10,11 +10,15 @@ function Tag() {
           <ul className="tags">
             <li className="tag">
               <p className="tag-text">CodeStates</p>
-              <p className="tag-close-button">x</p>
+              <button className="tag-close-button" type="button">
+                x
+              </button>
             </li>
             <li className="tag">
               <p className="tag-text">JJang</p>
-              <p className="tag-close-button">x</p>
+              <button className="tag-close-button" type="button">
+                x
+              </button>
             </li>
           </ul>
           <input
