@@ -13,7 +13,7 @@
       @include flex(start);
       @include text-style(base, rgba($black, 0.2));
       padding: 18px 0 18px 18px;
-      width: 256px;
+      width: 30vw;
       font-weight: 700;
       background-color: $grey;
       transition: all 250ms ease-in-out;
