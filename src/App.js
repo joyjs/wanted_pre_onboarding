@@ -6,6 +6,8 @@ import Toggle from './component/Toggle'
 import Tag from './component/Tag'
 
 function App() {
+  const selected = (tags) => console.log(tags)
+
   return (
     <div className="App">
       {/* Modal */}
@@ -18,7 +20,7 @@ function App() {
       <Toggle />
 
       {/* Tag */}
-      <Tag />
+      <Tag selected={selected} />
     </div>
   )
 }
