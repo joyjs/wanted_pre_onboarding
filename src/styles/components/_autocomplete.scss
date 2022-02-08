@@ -10,18 +10,7 @@
 
     &.is-active {
       .autocomplete-form {
-        .input {
-          border-bottom-left-radius: 0;
-          border-bottom-right-radius: 0;
-        }
-
-        .autocomplete-suggestions {
-          //
-        }
-
-        .autocomplete-no-suggestion {
-          //
-        }
+        //
       }
     }
   }
@@ -30,11 +19,17 @@
     position: relative;
 
     .input {
+      padding: 12px;
       width: 70vw;
       height: 40px;
       border: 1px solid $grey;
       border-radius: $autocomplet-border-radius;
       background-color: $white;
+
+      &.is-active {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+      }
 
       &:focus {
         filter: $autocomplete-filter;
