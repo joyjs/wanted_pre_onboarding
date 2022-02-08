@@ -1,8 +1,9 @@
 import React from 'react'
 import './styles/main.scss'
-import Toggle from './component/Toggle'
 import ModalButton from './component/ModalButton'
 import Tab from './component/Tab'
+import Toggle from './component/Toggle'
+import Tag from './component/Tag'
 
 function App() {
   return (
@@ -15,6 +16,9 @@ function App() {
 
       {/* Toggle */}
       <Toggle />
+
+      {/* Tag */}
+      <Tag />
     </div>
   )
 }
