@@ -11,6 +11,7 @@
     @include column-flex;
     padding: ($component-title-spacing / 2) ($component-title-spacing * 2)
       $component-title-spacing;
+    width: 70vw;
     border-radius: 10px;
     background-color: $white;
 
