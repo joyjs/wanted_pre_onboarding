@@ -1,0 +1,91 @@
+.autocomplete {
+  $autocomplete-filter: drop-shadow(0px 4px 4px rgba($black, 0.15));
+  $autocomplet-border-radius: 10px;
+
+  &-wrapper {
+    @include column-flex;
+    margin: $component-title-spacing 0;
+    width: 100vw;
+    height: auto;
+
+    &.is-active {
+      .autocomplete-form {
+        .input {
+          border-bottom-left-radius: 0;
+          border-bottom-right-radius: 0;
+        }
+
+        .autocomplete-suggestions {
+          //
+        }
+
+        .autocomplete-no-suggestion {
+          //
+        }
+      }
+    }
+  }
+
+  &-form {
+    position: relative;
+
+    .input {
+      width: 70vw;
+      height: 40px;
+      border: 1px solid $grey;
+      border-radius: $autocomplet-border-radius;
+      background-color: $white;
+
+      &:focus {
+        filter: $autocomplete-filter;
+      }
+    }
+
+    .close-button {
+      @include pos-center-y;
+      top: 18px;
+      right: 6px;
+      padding: 12px;
+      font-size: 12px;
+      line-height: 1.4; // NOTE: visual alignment
+      font-weight: 700;
+    }
+  }
+
+  &-suggestions,
+  &-no-suggestion {
+    z-index: 50px;
+    padding: 20px;
+    width: 70vw;
+    height: auto;
+    border-left: 1px solid $grey;
+    border-bottom: 1px solid $grey;
+    border-right: 1px solid $grey;
+    border-bottom-left-radius: $autocomplet-border-radius;
+    border-bottom-right-radius: $autocomplet-border-radius;
+    filter: $autocomplete-filter;
+    background-color: $white;
+  }
+
+  &-suggestions {
+    @include column-flex(center, start);
+    @include text-style(base, $black);
+
+    .suggestion {
+      margin-bottom: 10px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &-no-suggestion {
+    @include flex;
+    @include text-style(base, rgba($black, 0.4));
+
+    .emoji {
+      margin-right: 10px;
+    }
+  }
+}
