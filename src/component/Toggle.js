@@ -7,8 +7,8 @@ function Toggle({ onChange }) {
     <section className="Toggle">
       <h1 className="title">Toggle</h1>
 
-      <form className="toggle-wrapper" action="">
-        <label className="toggle" for="switch">
+      <form className="toggle-wrapper">
+        <label className="toggle" htmlFor="switch">
           <input
             id="switch"
             type="checkbox"
