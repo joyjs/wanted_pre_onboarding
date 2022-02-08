@@ -25,7 +25,7 @@
     .tags {
       @include flex(start);
       flex-wrap: wrap;
-      gap: $tags-spacing;
+      gap: $tags-spacing * 2;
 
       .tag {
         @include flex;
@@ -58,6 +58,7 @@
 
     &-input {
       @include text-style(16, $black);
+      margin-left: $tags-spacing * 2;
       font-weight: 500;
       flex: 1;
       height: $tags-stack-height - ($tags-spacing * 2);
