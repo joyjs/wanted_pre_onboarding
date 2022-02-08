@@ -4,6 +4,7 @@ import ModalButton from './component/ModalButton'
 import Tab from './component/Tab'
 import Toggle from './component/Toggle'
 import Tag from './component/Tag'
+import Autocomplete from './component/Autocomplete'
 
 function App() {
   const selected = (tags) => console.log(tags)
@@ -21,6 +22,9 @@ function App() {
 
       {/* Tag */}
       <Tag selected={selected} />
+
+      {/* Autocomplete */}
+      <Autocomplete />
     </div>
   )
 }
