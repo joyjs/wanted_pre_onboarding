@@ -25,12 +25,12 @@
     .tags {
       @include flex(start);
       flex-wrap: wrap;
+      gap: $tags-spacing;
 
       .tag {
         @include flex;
         @include text-style(16, $white);
         padding: 0 ($tags-spacing * 2);
-        margin-right: $tags-spacing;
         width: auto;
         height: $tags-stack-height - ($tags-spacing * 2);
         border-radius: 6px;
