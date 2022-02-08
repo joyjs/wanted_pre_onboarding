@@ -24,7 +24,24 @@ function App() {
       <Tag selected={selected} />
 
       {/* Autocomplete */}
-      <Autocomplete />
+      <Autocomplete
+        sugs={[
+          'antique',
+          'vintage',
+          '중고A급',
+          'refurbished',
+          'rustic',
+          'Gatsby',
+          'Reactjs',
+          'Vuejs',
+          'Svelte',
+          'Nextjs',
+          'Node',
+          'Express',
+          'React-router',
+          'Redux',
+        ]}
+      />
     </div>
   )
 }
