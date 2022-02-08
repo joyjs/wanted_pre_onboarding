@@ -3,18 +3,18 @@
   $tags-spacing: 6px;
 
   &-wrapper {
-    @include column-flex;
+    @include column-flex(start, center);
     margin: $component-title-spacing 0;
     width: 100vw;
     height: auto;
   }
 
   &-stack {
-    @include flex;
+    @include flex(start);
     flex-wrap: wrap;
     min-width: 60vw;
     min-height: $tags-stack-height;
-    padding: 0 $tags-spacing;
+    padding: $tags-spacing;
     border: 1px solid $grey;
     border-radius: 6px;
 
@@ -23,7 +23,7 @@
     }
 
     .tags {
-      @include flex;
+      @include flex(start);
       flex-wrap: wrap;
 
       .tag {
