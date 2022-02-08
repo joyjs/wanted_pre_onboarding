@@ -12,7 +12,7 @@
   &-stack {
     @include flex(start);
     flex-wrap: wrap;
-    min-width: 60vw;
+    width: 90vw;
     min-height: $tags-stack-height;
     padding: $tags-spacing;
     border: 1px solid $grey;
