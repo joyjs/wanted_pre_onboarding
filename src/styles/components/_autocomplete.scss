@@ -4,15 +4,10 @@
 
   &-wrapper {
     @include column-flex;
+    position: relative;
     margin: $component-title-spacing 0;
     width: 100vw;
     height: auto;
-
-    &.is-active {
-      .autocomplete-form {
-        //
-      }
-    }
   }
 
   &-form {
