@@ -18,4 +18,8 @@
       padding: $component-title-spacing;
     }
   }
+
+  .Autocomplete {
+    z-index: $autocomplete-dimension;
+  }
 }
