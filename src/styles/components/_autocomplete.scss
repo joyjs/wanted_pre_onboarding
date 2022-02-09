@@ -14,6 +14,7 @@
     position: relative;
 
     .input {
+      z-index: $input-dimension;
       padding: 12px;
       width: 70vw;
       height: 40px;
@@ -39,6 +40,19 @@
       font-size: 12px;
       line-height: 1.4; // NOTE: visual alignment
       font-weight: 700;
+    }
+
+    .close-background {
+      @include column-flex(end);
+      @include text-style(16, rgba($black, 0.4));
+      position: absolute;
+      z-index: $close-background-dimension;
+      padding-bottom: $component-title-spacing;
+      width: 100vw;
+      height: 300px;
+      left: -15vw;
+      top: -150px;
+      background-color: rgba($grey, 0.4);
     }
   }
 
