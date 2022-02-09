@@ -8,7 +8,7 @@
 </div>
 <br />
 <h1 align="middle">원티드 프리온보딩 코스</h2>
-<p align="middle">🎠 Casestudy with <a href="https://www.wanted.co.kr/" target="_blank">Wanted</a>'s GNB and TopCarousel</p>
+<p align="middle">🎠 <a href="https://www.wanted.co.kr/" target="_blank">원티드</a>의 프리온보딩 프론트엔드 코스</p>
 
 <p align="middle">
   <img src="https://img.shields.io/badge/version-1.0.0-F1F0E7?style=flat-square" alt="template version"/>
