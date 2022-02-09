@@ -11,7 +11,7 @@
   .ClickToEdit {
     @include column-flex(start, start);
     width: 100%;
-    min-height: $component-spacing * 4;
+    height: 100%;
 
     .title {
       @include text-style(title, $black);
