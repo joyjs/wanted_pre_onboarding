@@ -1,14 +1,13 @@
-# 원티드 프리온보딩 코스
-
 <br />
 <br />
 
 <!-- Header -->
 
 <div align="middle" >
-  <img width="120px;" src="https://github.com/yejinc/wanted_pre_onboarding/blob/main/public/apple-touch-icon.png?raw=true"/>
+  <img width="120px;" src="https://user-images.githubusercontent.com/46529118/153215954-219b6bd6-36cd-4faf-a15e-fc0b1f4b8749.png"/>
 </div>
-<h1 align="middle">wanted_pre_onboarding</h2>
+<br />
+<h1 align="middle">원티드 프리온보딩 코스</h2>
 <p align="middle">🎠 Casestudy with <a href="https://www.wanted.co.kr/" target="_blank">Wanted</a>'s GNB and TopCarousel</p>
 
 <p align="middle">
