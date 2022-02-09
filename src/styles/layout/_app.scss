@@ -7,16 +7,24 @@
   .Tab,
   .Toggle,
   .Tag,
-  .Autocomplete {
+  .Autocomplete,
+  .ClickToEdit {
     @include column-flex(start, start);
     width: 100%;
     height: auto;
-    padding-bottom: $component-spacing;
 
     .title {
       @include text-style(title, $black);
       padding: $component-title-spacing;
     }
+  }
+
+  .ModalButton,
+  .Tab,
+  .Toggle,
+  .Tag,
+  .Autocomplete {
+    padding-bottom: $component-spacing;
   }
 
   .Autocomplete {
