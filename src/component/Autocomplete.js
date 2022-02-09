@@ -115,7 +115,7 @@ function Autocomplete({ sugs }) {
             className="close-background"
             type="button"
             onClick={resetInputField}
-            aria-hidden
+            aria-label="Deleting input text with clicking input background"
           >
             Click *grey area* to delete input text
           </button>
