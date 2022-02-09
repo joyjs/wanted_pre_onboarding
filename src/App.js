@@ -5,6 +5,7 @@ import Tab from './component/Tab'
 import Toggle from './component/Toggle'
 import Tag from './component/Tag'
 import Autocomplete from './component/Autocomplete'
+import ClickToEdit from './component/ClickToEdit'
 
 function App() {
   const selected = (tags) => console.log(tags)
@@ -42,6 +43,9 @@ function App() {
           'Redux',
         ]}
       />
+
+      {/* ClickToEdit */}
+      <ClickToEdit />
     </div>
   )
 }
