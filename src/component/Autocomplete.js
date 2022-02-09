@@ -8,11 +8,14 @@ function Autocomplete({ sugs }) {
   const [filteredSugs, setFilteredSugs] = useState([])
   const [activeSugIndex, setActiveSugIndex] = useState(0)
   const [showSugs, setShowSugs] = useState(false)
-  // const [value, setValue] = useState()
   const [input, setInput] = useState('')
 
   const onSubmit = (e) => {
     e.preventDefault()
+  }
+
+  const resetInputField = () => {
+    setInput('')
   }
 
   const onChange = (e) => {
@@ -33,7 +36,6 @@ function Autocomplete({ sugs }) {
     setInput(e.target.innerText)
     setActiveSugIndex(0)
     setShowSugs(false)
-    // () => setValue(() => '')
   }
 
   const onKeyDown = (e) => {
@@ -82,7 +84,7 @@ function Autocomplete({ sugs }) {
       </ul>
     ) : (
       <div className="autocomplete-no-suggestion">
-        <p className="emoji">😢</p>{' '}
+        <p className="emoji">😢</p>
         <p className="message">Oops! No suggestion matches.</p>
       </div>
     )
@@ -100,15 +102,22 @@ function Autocomplete({ sugs }) {
             onChange={onChange}
             onKeyDown={onKeyDown}
             value={input}
-            // value={(input, value)}
           />
           {showSugs && input && <SugsListComponent />}
           <button
             className="close-button"
             type="button"
-            // onClick={() => setValue(() => '')}
+            onClick={resetInputField}
           >
             x
+          </button>
+          <button
+            className="close-background"
+            type="button"
+            onClick={resetInputField}
+            aria-hidden
+          >
+            Click *grey area* to delete input text
           </button>
         </form>
       </div>
