@@ -11,7 +11,7 @@
     @include column-flex(start, start);
     width: 100%;
     height: auto;
-    margin-bottom: $component-spacing;
+    padding-bottom: $component-spacing;
 
     .title {
       @include text-style(title, $black);
