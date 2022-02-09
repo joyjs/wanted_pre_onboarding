@@ -1,0 +1,87 @@
+.clicktoedit {
+  $input-height: 36px;
+
+  &-wrapper {
+    @include column-flex;
+    @include text-style(base, $black);
+    position: relative;
+    margin: $component-title-spacing 0;
+    width: 100vw;
+    height: auto;
+  }
+
+  &-form {
+    @include column-flex;
+    margin-bottom: $component-spacing;
+
+    .input-name,
+    .input-age {
+      @include flex;
+    }
+
+    .input-name {
+      margin-bottom: 12px;
+      .name-label {
+        margin-right: 12px;
+      }
+      .name-input {
+        height: $input-height;
+        border: 1px solid $grey;
+
+        &:focus {
+          border-color: $purple;
+          border-radius: 2px;
+        }
+      }
+    }
+
+    .input-age {
+      .age-label {
+        margin-right: 12px;
+      }
+
+      .age-input {
+        height: $input-height;
+        border: 1px solid $grey;
+
+        &:focus {
+          border-color: $purple;
+          border-radius: 2px;
+        }
+      }
+    }
+  }
+
+  &-results {
+    @include flex;
+    flex-wrap: wrap;
+    max-width: 70vw;
+
+    .result-name,
+    .result-age {
+      @include flex(start);
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .result-name {
+      margin-right: 6px;
+
+      .name-title {
+        margin-right: 6px;
+      }
+
+      .name-binded {
+        max-width: 70vw;
+        overflow-wrap: break-word;
+        hyphens: manual;
+      }
+    }
+
+    .result-age {
+      .age-title {
+        margin-right: 6px;
+      }
+    }
+  }
+}
