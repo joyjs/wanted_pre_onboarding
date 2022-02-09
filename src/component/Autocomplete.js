@@ -95,7 +95,7 @@ function Autocomplete({ sugs }) {
       <div className="autocomplete-wrapper">
         <form className="autocomplete-form" onSubmit={onSubmit}>
           <input
-            className="input is-active"
+            className="input"
             type="text"
             onChange={onChange}
             onKeyDown={onKeyDown}
