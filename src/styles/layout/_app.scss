@@ -11,7 +11,7 @@
   .ClickToEdit {
     @include column-flex(start, start);
     width: 100%;
-    height: auto;
+    height: $component-spacing * 4;
 
     .title {
       @include text-style(title, $black);
@@ -23,7 +23,7 @@
   .Tab,
   .Toggle,
   .Tag,
-  .Autocomplete {
+  .ClickToEdit {
     padding-bottom: $component-spacing;
   }
 

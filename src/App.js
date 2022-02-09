@@ -24,6 +24,9 @@ function App() {
       {/* Tag */}
       <Tag selected={selected} />
 
+      {/* ClickToEdit */}
+      <ClickToEdit />
+
       {/* Autocomplete */}
       <Autocomplete
         sugs={[
@@ -37,15 +40,13 @@ function App() {
           'Vuejs',
           'Svelte',
           'Nextjs',
+
           'Node',
           'Express',
           'React-router',
           'Redux',
         ]}
       />
-
-      {/* ClickToEdit */}
-      <ClickToEdit />
     </div>
   )
 }
